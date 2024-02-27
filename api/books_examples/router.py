@@ -26,7 +26,7 @@ async def read_only_authors_with_books(session: AsyncSession = Depends(database_
     return authors_with_books
 
 
-@books_router.get("/{author_id}/")  # , response_model=ReadAuthorScheme)
+@books_router.get("/{author_id}/", response_model=ReadAuthorScheme)
 async def read_author_by_id(author_id: int,
                             session: AsyncSession = Depends(database_helper.get_session),
                             crud_service: CRUDService = Depends(CRUDService)):
