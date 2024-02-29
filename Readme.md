@@ -11,7 +11,7 @@ This is a simple FastAPI application integrated with SQLAlchemy ORM, designed to
 - **Simple Structure**: Provides a straightforward project structure for easy understanding and customization.
 
 ## Requirements
-All dependencies located in req.txt
+All dependencies located in `req.txt`
 
 ## Installation
 
